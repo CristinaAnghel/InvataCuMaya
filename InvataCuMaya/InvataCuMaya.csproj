@@ -1,0 +1,603 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{37148C2D-7700-46FA-AA2C-D5BC4F6D6DE6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProiectInfoEducatie</RootNamespace>
+    <AssemblyName>ProiectInfoEducatie</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Albastru.cs" />
+    <Compile Include="Animale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Animale.Designer.cs">
+      <DependentUpon>Animale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bani.cs" />
+    <Compile Include="ConturiDataSet.cs">
+      <DependentUpon>ConturiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ConturiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConturiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Culori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Culori.Designer.cs">
+      <DependentUpon>Culori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Galben.cs" />
+    <Compile Include="Haina.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Acasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>Acasa.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fructe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fructe.Designer.cs">
+      <DependentUpon>Fructe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Joc1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Joc1.Designer.cs">
+      <DependentUpon>Joc1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Joc2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Joc2.Designer.cs">
+      <DependentUpon>Joc2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Legume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legume.Designer.cs">
+      <DependentUpon>Legume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Magazin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Magazin.Designer.cs">
+      <DependentUpon>Magazin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maro.cs" />
+    <Compile Include="Par.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Joc3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Joc3.Designer.cs">
+      <DependentUpon>Joc3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rosu.cs" />
+    <Compile Include="Salopeta.cs" />
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Animale.resx">
+      <DependentUpon>Animale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Culori.resx">
+      <DependentUpon>Culori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Acasa.resx">
+      <DependentUpon>Acasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fructe.resx">
+      <DependentUpon>Fructe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Joc1.resx">
+      <DependentUpon>Joc1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Joc2.resx">
+      <DependentUpon>Joc2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legume.resx">
+      <DependentUpon>Legume.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Magazin.resx">
+      <DependentUpon>Magazin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Joc3.resx">
+      <DependentUpon>Joc3.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ConturiDataSet.xsc">
+      <DependentUpon>ConturiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ConturiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ConturiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ConturiDataSet.xss">
+      <DependentUpon>ConturiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0__2_-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\686-6865532_free-png-question-mark-clipart-png-png-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bubble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %2810%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %287%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %286%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %2812%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %2811%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %2815%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %2814%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %2813%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %2818%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %2821%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %2820%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %2820%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %2819%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %2821%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ardei.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cartofi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\castraveti.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conopida.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\morcovi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rosii.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mov.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pisica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pepene.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\semn_intrebare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\muzica.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\galben.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mayam_galben.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mayab_galben.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\albastru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mayam_albastru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mayab_albastru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salopeta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mayam_salopeta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mayab_salopeta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mayam_rosu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rosu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mayab_rosu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\par_maro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maya_par_maro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %285%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %283%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %282%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %284%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %286%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %281%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2811%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2810%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %289%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %288%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %287%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %286%29 %281%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2816%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2817%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2815%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2814%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2813%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2812%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2823%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2822%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2821%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2820%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2819%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2818%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blond.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pisica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pepene.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\morcov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rosie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cirese.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\albastru_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3-35748_orange-splash-ink-clip-art-icon-orange-paint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\18-187363_splatter-paint-splash-dark-green-splash-ink-clip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\279-2798149_yellow-splash-splash-hd-yellow-hd-png-download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\girafe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cel-mai-batran-caine-din-lume-c-970x546.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\media-150679690125580700.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cherries-231199135-1-scaled.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mere-artificiale-decorative-culoarea-rosie.-Fructe-artificiale-decor.Fructe-artificale-ornamentale.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ink-blue-splash-drop-water-79738.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PEPENE-VERDE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pisica-1170x864.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\portocala.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purple-splash-ink-hi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red_Splash.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s2-01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vaca-1-e1650870137766.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elefant_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pere_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Conturi.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Conturi_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Conturi.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\corect.png" />
+    <None Include="Resources\gresit.png" />
+    <None Include="Resources\audio_start.wav" />
+    <None Include="Resources\audio_gresit1.wav" />
+    <None Include="Resources\audio_gresit.wav" />
+    <None Include="Resources\audio_corect.wav" />
+    <None Include="Resources\audio_inapoi.wav" />
+    <None Include="Resources\audio_click.wav" />
+    <None Include="Resources\audio_cumpara.wav" />
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2842%29.wav" />
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2843%29.wav" />
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2845%29.wav" />
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2844%29.wav" />
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2846%29.wav" />
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2847%29.wav" />
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2836%29.wav" />
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2837%29.wav" />
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2838%29.wav" />
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2839%29.wav" />
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2840%29.wav" />
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2841%29.wav" />
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2830%29.wav" />
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2831%29.wav" />
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2832%29.wav" />
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2833%29.wav" />
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2834%29.wav" />
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2835%29.wav" />
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2825%29.wav" />
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2824%29.wav" />
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2827%29.wav" />
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2826%29.wav" />
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2828%29.wav" />
+    <None Include="Resources\Record %28online-voice-recorder.com%29 %2829%29.wav" />
+    <None Include="Resources\culori_rosu.png" />
+    <None Include="Resources\culori_albastru.png" />
+    <None Include="Resources\culori_galben.png" />
+    <None Include="Resources\culori_verde.png" />
+    <None Include="Resources\culori_portocaliu.png" />
+    <None Include="Resources\culori_mov.png" />
+    <None Include="Resources\fructe_mere.png" />
+    <None Include="Resources\fructe_pere.png" />
+    <None Include="Resources\fructe_cirese.png" />
+    <None Include="Resources\fructe_capsuni.png" />
+    <None Include="Resources\fructe_portocale.png" />
+    <None Include="Resources\fructe_pepene.png" />
+    <None Include="Resources\legume_rosii.png" />
+    <None Include="Resources\legume_ardei.png" />
+    <None Include="Resources\legume_cartofi.png" />
+    <None Include="Resources\legume_castraveti.png" />
+    <None Include="Resources\legume_conopida.png" />
+    <None Include="Resources\legume_morcovi.png" />
+    <None Include="Resources\animale_pisica.png" />
+    <None Include="Resources\animale_caine.png" />
+    <None Include="Resources\animale_vaca.png" />
+    <None Include="Resources\animale_leu.png" />
+    <None Include="Resources\animale_girafa.png" />
+    <None Include="Resources\animale_elefant.png" />
+    <None Include="Resources\fundal_joc3.png" />
+    <None Include="Resources\buton_joc3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
